@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main-div {
+  width: 60%;
+  height: 90%;
+  background-color: #eee;
+  margin: 20px auto;
+  padding: 30px 0px 20px;
+  border: 1px solid rgb(216, 215, 215);
+}
+.main-div .container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.main-div .container .card {
+  flex: 0 0 calc(94% / 3);
+  margin: 1%;
+  background-color: #fff;
+  height: calc(96% / 2);
+  padding: 2%;
+  border: 1px solid rgb(216, 215, 215);
+}
+
+.main-div .container .card .info img {
+  width: 100%;
+  height: 50%;
+}
+.main-div .container .card .info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.main-div .container .card .info span:first-of-type,
+.main-div .container .card .info p {
+  font-size: 12px;
+  font-weight: 550;
+  color: rgb(59, 59, 59);
+  opacity: 0.7;
+  line-height: 1.7;
+  margin-bottom: 5px;
+}
+.main-div .container .card .info span a {
+  text-decoration: none;
+  font-size: 10px;
+}
+.main-div .container .card .info span.old-price,
+.main-div .container .card .info span.current-price {
+  font-size: 12px;
+  font-weight: bold;
+}
+.main-div .container .card .info span.old-price {
+  text-decoration: line-through;
+  color: rgb(59, 59, 59);
+  opacity: 0.7;
+}
+.main-div .container .card .info .ships-to {
+  display: block;
+  background-color: #607d8b;
+  border-radius: 3px;
+  width: 56%;
+  padding: 0 3% 3px;
+  margin: 5px 0px;
+  cursor: pointer;
+}
+.main-div .container .card .info .ships-to a {
+  color: #fff;
+  text-decoration: none;
+}
+.main-div .container .card .info > a {
+  text-decoration: none;
+  display: block;
+  direction: rtl;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
